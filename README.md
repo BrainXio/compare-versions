@@ -17,7 +17,7 @@ Configure this action effortlessly in your workflow file:
 
 ```yaml
 - name: Compare Versions
-  uses: <username>/<repository>@<version>
+  uses: brainxio/compare-versions@v1
   with:
     source-version: '<SOURCE_VERSION>'
     target-version: '<TARGET_VERSION>'
@@ -38,7 +38,7 @@ Configure this action effortlessly in your workflow file:
 
 ```yaml
 - name: Compare Versions
-  uses: <username>/<repository>@<version>
+  uses: brainxio/compare-versions@v1
   with:
     source-version: 'v1.0.0'
     target-version: 'v2.0.0'
