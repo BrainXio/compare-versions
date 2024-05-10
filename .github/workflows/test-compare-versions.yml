@@ -18,7 +18,7 @@ jobs:
       
     - name: Test Full Equality
       id: full_equality
-      uses: <username>/<repository>@<version>
+      uses: './'
       with:
         source-version: 'v1.0.0'
         target-version: 'v1.0.0'
@@ -30,7 +30,7 @@ jobs:
 
     - name: Test Partial Equality
       id: partial_equality
-      uses: <username>/<repository>@<version>
+      uses: './'
       with:
         source-version: 'v1.0.0'
         target-version: 'v1.0.0-alpha'
@@ -42,10 +42,10 @@ jobs:
         if [ "${{ env.VERSIONS_ARE_EQUAL }}" == "false" ]; then
           echo "Highest Version: ${{ env.HIGHEST_VERSION }}"
         fi
-        
+
     - name: Test No Equality
       id: no_equality
-      uses: <username>/<repository>@<version>
+      uses: './'
       with:
         source-version: 'v1.0.0'
         target-version: 'v2.0.0'
