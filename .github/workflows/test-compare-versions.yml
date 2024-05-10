@@ -2,8 +2,6 @@ name: 'Test Compare Versions'
 
 on:
   push:
-    paths:
-      - '.github/actions/compare-versions/**'
   pull_request:
     branches: ['main']
   workflow_dispatch:
